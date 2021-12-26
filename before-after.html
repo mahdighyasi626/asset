@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square {
+            width: 400px;
+            height: 150px;
+            background: red;
+            margin: 45px auto auto;
+            position: relative;
+        }
+        
+        .square::after {
+            content: '';
+            height: 15px;
+            width: 95%;
+            background: black;
+            position: absolute;
+            bottom: -5px;
+            border-radius: 15px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="square">
+
+    </div>
+</body>
+
+</html>
